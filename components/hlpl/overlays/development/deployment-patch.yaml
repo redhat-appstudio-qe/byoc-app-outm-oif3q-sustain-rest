@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hlpl
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-ocvf-tenant/byoc-app-outm/hlpl@sha256:62533df8254e2bd54c1d58d71fd1b5430db6b58d5160a8af477ba0bf3647387f
+        name: my-java-quarkus
+        resources: {}
+status: {}
