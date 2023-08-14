@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: hlpl
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-ocvf-tenant/byoc-app-outm/hlpl@sha256:62533df8254e2bd54c1d58d71fd1b5430db6b58d5160a8af477ba0bf3647387f
         name: my-java-quarkus
         ports:
         - containerPort: 8081
